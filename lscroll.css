@@ -1,0 +1,41 @@
+/* Сокрытие браузерного скролла в сrome на андроиде */
+.lScrollContainer::-webkit-scrollbar {
+  background: rgba(0,0,0,0);
+}
+.lScrollContainer::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0);
+}
+/*Стили ползунка*/
+.vertical-bar{
+	height: 100%;
+	width: 8px;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}
+.vertical-bar__slider{
+	width: 8px;
+	height: 30px;
+	margin: 0 auto;
+	background: rgba(200, 255, 0, 0.5);
+	opacity: 0.5;
+	position: absolute;
+	top: 0px;
+	cursor: pointer;
+}
+
+.horizontal-bar{
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	bottom: 8px;
+	left: 0;
+}
+.horizontal-bar__slider{
+	width: 30px;
+	height: 8px;
+	background: rgba(200, 255, 0, 0.5);
+	position: absolute;
+	left: 0;
+	cursor: pointer;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="lscroll.css">
+	<title>Document</title>
+	<style>
+
+		*, *::before, *::after{
+			box-sizing: border-box;
+		}
+
+		.test-conteiner-wrapp{
+			border: 1px solid black;
+			width: 300px;
+			height: 500px;
+			min-width: 200px;
+			top: 0;
+		}
+		.test-conteiner-wrapp .test-container-content{
+			/* width: 450px; */
+		}
+		.test-conteiner-wrapp-2{
+			width: 500px !important;
+			height: 300px !important;
+			margin-top: 30px;
+		}
+
+
+	</style>
+	
+</head>
+<body>
+
+	<div class="test-conteiner-wrapp">
+		<div class="test-container-content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+				
+
+		</div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, excepturi labore fugit error pariatur ab dolore eius placeat eaque dolorem debitis iste at suscipit enim inventore quam voluptatum! Totam, illum!</span>
+	</div>
+
+
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="lscroll.min.js"></script>
+<script >
+
+	$(document).ready(function(){
+		var $container = $('.test-conteiner-wrapp');
+		if($container.length > 0){
+			$container.lScroll();
+		}
+	});
+</script>
+</body>
+</html>
