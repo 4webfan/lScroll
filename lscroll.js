@@ -9,17 +9,17 @@
             function initStart(jqObj){
                 // Проверяем есть ли объект физически и один ли он
                 if(jqObj.length > 0){
-                        jqObj.each(function(){
-                            var param = new initParam();
-                            // Сохраняем объект в массиве
-                            //objParams.push(param);
-                            //console.log(objParams);
-                            // Инициализация html-конструктора
-                            //param.htmlConstructor($(this));
-                            param.htmlRebuld($(this));
-                        });
+                  jqObj.each(function(){
+                      var param = new initParam();
+                      // Сохраняем объект в массиве
+                      //objParams.push(param);
+                      //console.log(objParams);
+                      // Инициализация html-конструктора
+                      //param.htmlConstructor($(this));
+                      param.htmlRebuld($(this));
+                  });
                 }else{
-                    return false;
+                  return false;
                 }
             };
             
@@ -361,13 +361,16 @@
         },
         getContainerSize: function( jqObj ){
             if(jqObj.length > 0){
-                this.containerHeight = jqObj.outerHeight();
-                this.containerWidth = jqObj.outerWidth();
+                //this.containerHeight = jqObj.outerHeight();
+                //this.containerWidth = jqObj.outerWidth();
+                this.containerHeight = jqObj.height();
+                this.containerWidth = jqObj.width();
             }
         },
         getContentSize: function( jqObj ){
             if(jqObj.length > 0){
-                this.contentHeight = jqObj.outerHeight();
+                this.contentHeight = jqObj.height();
+                //this.contentHeight = jqObj.outerHeight();
                 //this.contentWidth = jqObj.width();
             }
         },
@@ -398,7 +401,8 @@
                 var $child = jqObj.children();
                 if($child.length > 0){
                     $child.each(function(){
-                        var w = $(this).outerWidth(true);
+                        //var w = $(this).outerWidth(true);
+                        var w = $(this).width();
                         if(w > maxWidth)
                             maxWidth = w;
                     });
